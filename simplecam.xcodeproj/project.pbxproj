@@ -54,14 +54,46 @@
 		582DA02E1E70609200508ADA /* simplecam */ = {
 			isa = PBXGroup;
 			children = (
-				582DA02F1E70609200508ADA /* AppDelegate.swift */,
-				582DA0311E70609200508ADA /* ViewController.swift */,
-				582DA0331E70609200508ADA /* Main.storyboard */,
-				582DA0361E70609200508ADA /* Assets.xcassets */,
-				582DA0381E70609200508ADA /* LaunchScreen.storyboard */,
-				582DA03B1E70609200508ADA /* Info.plist */,
+				582DA0431E7061D400508ADA /* controller */,
+				582DA0421E7061CF00508ADA /* view */,
+				582DA0411E7061CB00508ADA /* model */,
+				582DA0441E7061FD00508ADA /* resources */,
 			);
 			path = simplecam;
+			sourceTree = "<group>";
+		};
+		582DA0411E7061CB00508ADA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				582DA02F1E70609200508ADA /* AppDelegate.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		582DA0421E7061CF00508ADA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				582DA0331E70609200508ADA /* Main.storyboard */,
+				582DA0381E70609200508ADA /* LaunchScreen.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		582DA0431E7061D400508ADA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				582DA0311E70609200508ADA /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		582DA0441E7061FD00508ADA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				582DA0361E70609200508ADA /* Assets.xcassets */,
+				582DA03B1E70609200508ADA /* Info.plist */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
