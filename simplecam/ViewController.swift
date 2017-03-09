@@ -11,6 +11,7 @@ import MobileCoreServices
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func newImageTapped(_ sender: Any) {
         
@@ -74,7 +75,8 @@ extension ViewController:UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        // TODO: use picture, for example in storyboard
+        //do something with image
+        imageView.image = image
         
         dismiss(animated: true, completion: nil)
     }

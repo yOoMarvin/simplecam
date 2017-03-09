@@ -28,16 +28,29 @@
                                     <action selector="newImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6zK-6V-8oB"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XVh-Y6-nbn">
+                                <rect key="frame" x="67" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="BOF-Iz-Rce"/>
+                                    <constraint firstAttribute="width" constant="240" id="iiS-vA-fzN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="XVh-Y6-nbn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SCx-0e-DwI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GV0-Q4-4Nq" secondAttribute="bottom" constant="60" id="Spu-j7-bnG"/>
+                            <constraint firstItem="XVh-Y6-nbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bDa-8U-nFC"/>
                             <constraint firstItem="GV0-Q4-4Nq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oew-Ij-SrV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="XVh-Y6-nbn" id="wDr-M0-VuS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>
