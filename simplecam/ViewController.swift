@@ -52,6 +52,18 @@ class ViewController: UIViewController {
         tmpPicker.allowsEditing = true
         tmpPicker.delegate = self
         
+        //display custom cam overlay only for the camera action
+        if srcType == .photoLibrary {
+            return tmpPicker
+        }
+        
+        //camera overlay
+        tmpPicker.showsCameraControls = false
+        let controller = CameraOverlayViewController(nibName: "CameraOverlayViewController", bundle: nil)
+        let overlayView = controller.view as! CameraOverlayView
+        overlayView.frame = tmpPicker.view.frame
+        tmpPicker.cameraOverlayView = overlayView
+        
         return tmpPicker
     }
     

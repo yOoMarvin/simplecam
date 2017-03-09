@@ -10,10 +10,19 @@ import UIKit
 
 class CameraOverlayViewController: UIViewController {
 
+    
+    @IBOutlet weak var snapButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        snapButton.layer.cornerRadius = 0.5 * snapButton.bounds.size.width
+        cancelButton.layer.cornerRadius = 0.5 * cancelButton.bounds.size.width
 
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {

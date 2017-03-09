@@ -10,6 +10,16 @@ import UIKit
 
 class CameraOverlayView: UIView {
 
+    
+    @IBAction func takePicture(_ sender: Any) {
+        //TODO: Add logic
+    }
+    
+    
+    @IBAction func cancel(_ sender: Any) {
+        //TODO: Add logic
+    }
+    
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
