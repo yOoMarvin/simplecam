@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580EE8511E71C7E8004EB546 /* CameraOverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580EE84F1E71C7E8004EB546 /* CameraOverlayViewController.swift */; };
+		580EE8521E71C7E8004EB546 /* CameraOverlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580EE8501E71C7E8004EB546 /* CameraOverlayViewController.xib */; };
+		580EE8541E71C818004EB546 /* CameraOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580EE8531E71C818004EB546 /* CameraOverlayView.swift */; };
 		582DA0301E70609200508ADA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DA02F1E70609200508ADA /* AppDelegate.swift */; };
 		582DA0321E70609200508ADA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582DA0311E70609200508ADA /* ViewController.swift */; };
 		582DA0351E70609200508ADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582DA0331E70609200508ADA /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		580EE84F1E71C7E8004EB546 /* CameraOverlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOverlayViewController.swift; sourceTree = "<group>"; };
+		580EE8501E71C7E8004EB546 /* CameraOverlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraOverlayViewController.xib; sourceTree = "<group>"; };
+		580EE8531E71C818004EB546 /* CameraOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraOverlayView.swift; sourceTree = "<group>"; };
 		582DA02C1E70609200508ADA /* simplecam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplecam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582DA02F1E70609200508ADA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582DA0311E70609200508ADA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 			children = (
 				582DA0331E70609200508ADA /* Main.storyboard */,
 				582DA0381E70609200508ADA /* LaunchScreen.storyboard */,
+				580EE8501E71C7E8004EB546 /* CameraOverlayViewController.xib */,
+				580EE8531E71C818004EB546 /* CameraOverlayView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -83,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				582DA0311E70609200508ADA /* ViewController.swift */,
+				580EE84F1E71C7E8004EB546 /* CameraOverlayViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -158,6 +167,7 @@
 			files = (
 				582DA03A1E70609200508ADA /* LaunchScreen.storyboard in Resources */,
 				582DA0371E70609200508ADA /* Assets.xcassets in Resources */,
+				580EE8521E71C7E8004EB546 /* CameraOverlayViewController.xib in Resources */,
 				582DA0351E70609200508ADA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				580EE8541E71C818004EB546 /* CameraOverlayView.swift in Sources */,
 				582DA0321E70609200508ADA /* ViewController.swift in Sources */,
 				582DA0301E70609200508ADA /* AppDelegate.swift in Sources */,
+				580EE8511E71C7E8004EB546 /* CameraOverlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +346,7 @@
 				582DA0401E70609200508ADA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
