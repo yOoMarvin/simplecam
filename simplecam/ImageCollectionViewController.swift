@@ -19,10 +19,9 @@ class ImageCollectionViewController: UICollectionViewController, UICollectionVie
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-            }
+    override func viewDidAppear(_ animated: Bool) {
+        images = imageResource.getImages()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

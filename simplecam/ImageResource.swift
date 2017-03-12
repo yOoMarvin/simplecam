@@ -42,4 +42,22 @@ class ImageResource {
         imgObj.imageData = UIImageJPEGRepresentation(image, 100) as NSData?
         saveContext()
     }
+    
+    
+    
+    
+    func getImages() -> [Image] {
+        
+        var images = [Image]()
+        
+        let request: NSFetchRequest<Image> = Image.fetchRequest()
+        
+        do {
+            images = try persistentContainer.viewContext.fetch(request)
+        }catch {
+            print(error.localizedDescription)
+        }
+        
+        return images
+    }
 }
