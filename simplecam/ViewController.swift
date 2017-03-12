@@ -112,13 +112,12 @@ extension ViewController: CamerOverlayViewDelegate {
 
 
 
-
 extension ViewController:UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        //do something with image
-        imageView.image = image
+        //do something with image, save it to coredata
+        imageResource.insert(image: image)
         
         dismiss(animated: true, completion: nil)
     }

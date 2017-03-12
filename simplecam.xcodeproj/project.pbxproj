@@ -16,7 +16,7 @@
 		582DA0371E70609200508ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582DA0361E70609200508ADA /* Assets.xcassets */; };
 		582DA03A1E70609200508ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582DA0381E70609200508ADA /* LaunchScreen.storyboard */; };
 		58D2DA0C1E758320008487F6 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA0B1E758320008487F6 /* ImageResource.swift */; };
-		58D2DA0F1E758476008487F6 /* ImageResource.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA0D1E758476008487F6 /* ImageResource.xcdatamodeld */; };
+		58D2DA0F1E758476008487F6 /* simplecam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA0D1E758476008487F6 /* simplecam.xcdatamodeld */; };
 		58D2DA111E758528008487F6 /* Image+GetAsUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA101E758528008487F6 /* Image+GetAsUIImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 		582DA0391E70609200508ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		582DA03B1E70609200508ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58D2DA0B1E758320008487F6 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
-		58D2DA0E1E758476008487F6 /* ImageResource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageResource.xcdatamodel; sourceTree = "<group>"; };
+		58D2DA0E1E758476008487F6 /* simplecam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simplecam.xcdatamodel; sourceTree = "<group>"; };
 		58D2DA101E758528008487F6 /* Image+GetAsUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+GetAsUIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +109,7 @@
 			children = (
 				582DA0361E70609200508ADA /* Assets.xcassets */,
 				582DA03B1E70609200508ADA /* Info.plist */,
-				58D2DA0D1E758476008487F6 /* ImageResource.xcdatamodeld */,
+				58D2DA0D1E758476008487F6 /* simplecam.xcdatamodeld */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				580EE8541E71C818004EB546 /* CameraOverlayView.swift in Sources */,
-				58D2DA0F1E758476008487F6 /* ImageResource.xcdatamodeld in Sources */,
+				58D2DA0F1E758476008487F6 /* simplecam.xcdatamodeld in Sources */,
 				582DA0321E70609200508ADA /* ViewController.swift in Sources */,
 				58D2DA111E758528008487F6 /* Image+GetAsUIImage.swift in Sources */,
 				582DA0301E70609200508ADA /* AppDelegate.swift in Sources */,
@@ -363,13 +363,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		58D2DA0D1E758476008487F6 /* ImageResource.xcdatamodeld */ = {
+		58D2DA0D1E758476008487F6 /* simplecam.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				58D2DA0E1E758476008487F6 /* ImageResource.xcdatamodel */,
+				58D2DA0E1E758476008487F6 /* simplecam.xcdatamodel */,
 			);
-			currentVersion = 58D2DA0E1E758476008487F6 /* ImageResource.xcdatamodel */;
-			path = ImageResource.xcdatamodeld;
+			currentVersion = 58D2DA0E1E758476008487F6 /* simplecam.xcdatamodel */;
+			path = simplecam.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

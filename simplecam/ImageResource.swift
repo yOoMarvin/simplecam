@@ -33,4 +33,13 @@ class ImageResource {
             }
         }
     }
+    
+    
+    
+    func insert(image: UIImage) {
+        let imgObj = NSEntityDescription.insertNewObject(forEntityName: "Image", into: persistentContainer.viewContext) as! Image
+        
+        imgObj.imageData = UIImageJPEGRepresentation(image, 100) as NSData?
+        saveContext()
+    }
 }
