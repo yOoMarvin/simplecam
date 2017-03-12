@@ -9,9 +9,9 @@
 import UIKit
 
 
-class ImageCollectionViewController: UICollectionViewController {
+class ImageCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    lazy var imageResource = ImageResource ()
+    lazy var imageResource = ImageResource()
     var images = [Image]() {
         didSet {
             collectionView?.reloadData()
@@ -28,6 +28,13 @@ class ImageCollectionViewController: UICollectionViewController {
         super.didReceiveMemoryWarning()
         
         images = [Image]()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        let flowLayout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
+        flowLayout.invalidateLayout()
     }
 
     
@@ -50,17 +57,47 @@ class ImageCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imageCell", for: indexPath) as! ImageCollectionViewCell
     
         // Configure the cell
         let imgObj = images[indexPath.row]
         if let image = imgObj.image {
-            //TODO: set image in cell
+            //set image in cell
+            cell.imageView.image = image
         }
-        
-        
         return cell
     }
+    
+    
+    // MARK: FLow Layout
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width = collectionView.bounds.width
+        var columns = 3
+        var gaps = 2
+        
+        if UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation) {
+            columns = 4
+            gaps = 3
+        }
+        
+        let tmpWidth = width - CGFloat(gaps)
+        let itemWidth = tmpWidth / CGFloat(columns)
+        let itemHeight = itemWidth
+        
+        return CGSize(width: itemWidth, height: itemHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat(1)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return CGFloat(1)
+    }
+    
+    
 
     // MARK: UICollectionViewDelegate
 

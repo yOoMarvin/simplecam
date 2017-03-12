@@ -19,6 +19,7 @@
 		58D2DA0F1E758476008487F6 /* simplecam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA0D1E758476008487F6 /* simplecam.xcdatamodeld */; };
 		58D2DA111E758528008487F6 /* Image+GetAsUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA101E758528008487F6 /* Image+GetAsUIImage.swift */; };
 		58D2DA131E758899008487F6 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA121E758899008487F6 /* ImageCollectionViewController.swift */; };
+		58D2DA151E758A2F008487F6 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA141E758A2F008487F6 /* ImageCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		58D2DA0E1E758476008487F6 /* simplecam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = simplecam.xcdatamodel; sourceTree = "<group>"; };
 		58D2DA101E758528008487F6 /* Image+GetAsUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+GetAsUIImage.swift"; sourceTree = "<group>"; };
 		58D2DA121E758899008487F6 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		58D2DA141E758A2F008487F6 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				582DA0381E70609200508ADA /* LaunchScreen.storyboard */,
 				580EE8501E71C7E8004EB546 /* CameraOverlayViewController.xib */,
 				580EE8531E71C818004EB546 /* CameraOverlayView.swift */,
+				58D2DA141E758A2F008487F6 /* ImageCollectionViewCell.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				58D2DA111E758528008487F6 /* Image+GetAsUIImage.swift in Sources */,
 				58D2DA131E758899008487F6 /* ImageCollectionViewController.swift in Sources */,
 				582DA0301E70609200508ADA /* AppDelegate.swift in Sources */,
+				58D2DA151E758A2F008487F6 /* ImageCollectionViewCell.swift in Sources */,
 				580EE8511E71C7E8004EB546 /* CameraOverlayViewController.swift in Sources */,
 				58D2DA0C1E758320008487F6 /* ImageResource.swift in Sources */,
 			);
