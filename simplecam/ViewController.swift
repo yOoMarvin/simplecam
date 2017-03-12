@@ -11,6 +11,8 @@ import MobileCoreServices
 
 class ViewController: UIViewController {
     
+    var picker = UIImagePickerController()
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func newImageTapped(_ sender: Any) {
@@ -24,8 +26,8 @@ class ViewController: UIViewController {
                 (action: UIAlertAction) in
                 
                 // create picker
-                let picker = self.preparePicker(srcType: .camera)
-                self.present(picker, animated: true, completion: nil)
+                 self.picker = self.preparePicker(srcType: .camera)
+                self.present(self.picker, animated: true, completion: nil)
             }))
 
         }
@@ -34,8 +36,8 @@ class ViewController: UIViewController {
             (action: UIAlertAction) in
             
             // create picker
-            let picker = self.preparePicker(srcType: .photoLibrary)
-            self.present(picker, animated: true, completion: nil)
+            self.picker = self.preparePicker(srcType: .photoLibrary)
+            self.present(self.picker, animated: true, completion: nil)
         }))
         
         present(sheet, animated: true, completion: nil)
@@ -61,6 +63,7 @@ class ViewController: UIViewController {
         tmpPicker.showsCameraControls = false
         let controller = CameraOverlayViewController(nibName: "CameraOverlayViewController", bundle: nil)
         let overlayView = controller.view as! CameraOverlayView
+        overlayView.delegate = self
         overlayView.frame = tmpPicker.view.frame
         tmpPicker.cameraOverlayView = overlayView
         
@@ -81,7 +84,33 @@ class ViewController: UIViewController {
 
 }
 
+
+// MARK: Protocol
+
+protocol CamerOverlayViewDelegate {
+    func cancel()
+    func takePicture()
+}
+
 // MARK: Extensions
+
+extension ViewController: CamerOverlayViewDelegate {
+    
+    
+    func cancel() {
+        picker.dismiss(animated: true, completion: nil)
+        picker = UIImagePickerController()
+    }
+    
+    func takePicture() {
+        picker.takePicture()
+        picker = UIImagePickerController()
+    }
+}
+
+
+
+
 
 extension ViewController:UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {

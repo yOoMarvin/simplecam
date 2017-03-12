@@ -9,16 +9,23 @@
 import UIKit
 
 class CameraOverlayView: UIView {
-
+    
+    var delegate: CamerOverlayViewDelegate?
     
     @IBAction func takePicture(_ sender: Any) {
-        //TODO: Add logic
+        if let delegate = delegate {
+            delegate.takePicture()
+        }
     }
     
     
     @IBAction func cancel(_ sender: Any) {
-        //TODO: Add logic
+        if let delegate = delegate {
+            delegate.cancel()
+        }
     }
+    
+    
     
     /*
     // Only override draw() if you perform custom drawing.

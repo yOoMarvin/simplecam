@@ -9,7 +9,6 @@
 import UIKit
 
 class CameraOverlayViewController: UIViewController {
-
     
     @IBOutlet weak var snapButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
@@ -19,6 +18,7 @@ class CameraOverlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //buttons rounded
         snapButton.layer.cornerRadius = 0.5 * snapButton.bounds.size.width
         cancelButton.layer.cornerRadius = 0.5 * cancelButton.bounds.size.width
 
