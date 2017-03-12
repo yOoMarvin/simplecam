@@ -12,6 +12,7 @@ import MobileCoreServices
 class ViewController: UIViewController {
     
     var picker = UIImagePickerController()
+    lazy var imageResource = ImageResource()
     
     @IBOutlet weak var imageView: UIImageView!
     

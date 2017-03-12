@@ -15,6 +15,9 @@
 		582DA0351E70609200508ADA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582DA0331E70609200508ADA /* Main.storyboard */; };
 		582DA0371E70609200508ADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582DA0361E70609200508ADA /* Assets.xcassets */; };
 		582DA03A1E70609200508ADA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582DA0381E70609200508ADA /* LaunchScreen.storyboard */; };
+		58D2DA0C1E758320008487F6 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA0B1E758320008487F6 /* ImageResource.swift */; };
+		58D2DA0F1E758476008487F6 /* ImageResource.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA0D1E758476008487F6 /* ImageResource.xcdatamodeld */; };
+		58D2DA111E758528008487F6 /* Image+GetAsUIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D2DA101E758528008487F6 /* Image+GetAsUIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		582DA0361E70609200508ADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582DA0391E70609200508ADA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		582DA03B1E70609200508ADA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D2DA0B1E758320008487F6 /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		58D2DA0E1E758476008487F6 /* ImageResource.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageResource.xcdatamodel; sourceTree = "<group>"; };
+		58D2DA101E758528008487F6 /* Image+GetAsUIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+GetAsUIImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				582DA02F1E70609200508ADA /* AppDelegate.swift */,
+				58D2DA0B1E758320008487F6 /* ImageResource.swift */,
+				58D2DA101E758528008487F6 /* Image+GetAsUIImage.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 			children = (
 				582DA0361E70609200508ADA /* Assets.xcassets */,
 				582DA03B1E70609200508ADA /* Info.plist */,
+				58D2DA0D1E758476008487F6 /* ImageResource.xcdatamodeld */,
 			);
 			name = resources;
 			sourceTree = "<group>";
@@ -180,9 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				580EE8541E71C818004EB546 /* CameraOverlayView.swift in Sources */,
+				58D2DA0F1E758476008487F6 /* ImageResource.xcdatamodeld in Sources */,
 				582DA0321E70609200508ADA /* ViewController.swift in Sources */,
+				58D2DA111E758528008487F6 /* Image+GetAsUIImage.swift in Sources */,
 				582DA0301E70609200508ADA /* AppDelegate.swift in Sources */,
 				580EE8511E71C7E8004EB546 /* CameraOverlayViewController.swift in Sources */,
+				58D2DA0C1E758320008487F6 /* ImageResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +361,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58D2DA0D1E758476008487F6 /* ImageResource.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58D2DA0E1E758476008487F6 /* ImageResource.xcdatamodel */,
+			);
+			currentVersion = 58D2DA0E1E758476008487F6 /* ImageResource.xcdatamodel */;
+			path = ImageResource.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 582DA0241E70609200508ADA /* Project object */;
 }
